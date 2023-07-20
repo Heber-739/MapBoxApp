@@ -7,12 +7,14 @@
     [value]="currentZoom"
     class="form-range px-2"
     min="-2"
+    (input)="zoomChange(range.value)"
     max="18"
+    #range
     >
   <button class="btn btn-primary" (click)="zoomIn()">+</button>
 </div>
 <span class="form-label">{{currentZoom | number:'2.2-2'}}
   <br>
-  Lng,Lat: {{'algo'}}
+  Lng,Lat: {{lngLat | json}}
 </span>
 </div>

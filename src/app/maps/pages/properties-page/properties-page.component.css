@@ -1,0 +1,8 @@
+.title{
+  width: fit-content;
+  margin: 0 40px 0 auto;
+}
+.card-container{
+  width: calc(100vw - 135px);
+  margin-left: auto;
+}
